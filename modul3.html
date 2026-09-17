@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <!-- Tag Viewport untuk Responsif -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi - Bootstrap</title>
+
+  <!-- Panggilan Bootstrap CSS melalui CDN (versi 3.4.1 sesuai standar modul) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <style>
+    /* Styling opsional untuk merapikan posisi form dan footer */
+    body {
+      padding-top: 30px;
+      background-color: #f9f9f9;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 40px;
+      padding: 15px 0;
+      border-top: 1px solid #e7e7e7;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <!-- Mengatur lebar form menjadi 10 kolom pada layar tablet/desktop (col-sm-10) -->
+      <div class="col-sm-10 col-sm-offset-1 form-container">
+        <h2 class="page-header" style="margin-top:0;">Form Registrasi</h2>
+        
+        <form action="" method="POST">
+          <!-- Input Nama -->
+          <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" class="form-control" id="name" placeholder="Name" name="nama" required>
+          </div>
+
+          <!-- Input Email -->
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+          </div>
+
+          <!-- Input Password -->
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" name="Password" required>
+          </div>
+
+          <!-- Input Jenis Kelamin -->
+          <div class="form-group">
+            <label for="jk">Jenis Kelamin:</label>
+            <select class="form-control" id="jk" name="jk">
+              <option>Pria</option>
+              <option>Wanita</option>
+            </select>
+          </div>
+
+          <!-- Tombol Submit -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- TUGAS: Footer Berisi Nama dan NIM -->
+    <footer>
+      <p><strong>Praktikum Multimedia 2026</strong></p>
+      <p>Nama: Matthew Heydemans | NIM: 240211060060</p>
+    </footer>
+  </div>
+
+  <!-- JS Bootstrap & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
